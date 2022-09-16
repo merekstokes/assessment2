@@ -53,13 +53,23 @@ greetUser('Andrew')
 
 const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
 
+// function canWeDeliver(zipCode){
+//     if (deliveryAreaZipCodes.includes(zipCode)){
+//         console.log(`You're in our delivery zone!`)
+//     } else {
+//         console.log(`Sorry, we can't deliver to that address`)
+//     }
+// }
+
+
 function canWeDeliver(zipCode){
     if (deliveryAreaZipCodes.includes(zipCode)){
-        console.log(`You're in our delivery zone!`)
-    } else {
-        console.log(`Sorry, we can't deliver to that address`)
+        return `You're in our delivery zone!`
+    } 
+       return `Sorry, we can't deliver to that address`
     }
-}
+
+
 
 // canWeDeliver(85205)
 
